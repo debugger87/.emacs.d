@@ -141,6 +141,7 @@
                      "lang-pack"
                      "power-pack"
                      "git-pack"
+                     "go-pack"
                      "org-pack"
                      "bindings-pack"))
        (live-dir (file-name-as-directory "live"))

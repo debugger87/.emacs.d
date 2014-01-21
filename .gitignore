@@ -26,3 +26,4 @@ tmp/*
 swank/*
 .emacs.desktop*
 elpa
+etc/custom

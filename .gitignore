@@ -24,3 +24,5 @@ tramp
 tmp/*
 .smex-items
 swank/*
+.emacs.desktop
+elpa

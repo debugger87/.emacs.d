@@ -143,6 +143,7 @@
                      "git-pack"
                      "go-pack"
                      "org-pack"
+                     "solarized-pack"
                      "bindings-pack"))
        (live-dir (file-name-as-directory "live"))
        (dev-dir  (file-name-as-directory "dev")))

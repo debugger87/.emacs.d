@@ -9,4 +9,4 @@
 (add-hook 'c-mode-common-hook
           '(lambda ()
              (require 'xcscope)))
-(setq cscope-do-not-update-database t)
+;;(setq cscope-do-not-update-database t)

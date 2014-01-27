@@ -4,7 +4,7 @@
 ;; See README for more information.
 
 ;; Load bindings config
-(load ((concat (live-pack-lib-dir) "xcscope.el")))
+(load (concat (live-pack-lib-dir) "xcscope.el"))
 
 (add-hook 'c-mode-common-hook
           '(lambda ()

@@ -6,5 +6,7 @@
 ;; Load bindings config
 (load ((concat (live-pack-lib-dir) "xcscope.el")))
 
-(require 'xcscope)
+(add-hook 'c-mode-common-hook
+          '(lambda ()
+             (require 'xcscope)))
 (setq cscope-do-not-update-database t)

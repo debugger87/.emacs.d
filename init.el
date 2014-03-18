@@ -145,6 +145,7 @@
                      "org-pack"
                      "solarized-pack"
                      "cscope-pack"
+                     "csharp-pack"
                      "bindings-pack"))
        (live-dir (file-name-as-directory "live"))
        (dev-dir  (file-name-as-directory "dev")))
@@ -223,4 +224,4 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 
-(desktop-save-mode 1)
+;;(desktop-save-mode 1)

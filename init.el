@@ -143,7 +143,6 @@
                      "git-pack"
                      "go-pack"
                      "org-pack"
-                     "solarized-pack"
                      "cscope-pack"
                      "csharp-pack"
                      "bindings-pack"))

@@ -1,3 +1,0 @@
-[submodule "vendor/submodules/solarized-emacs"]
-	path = vendor/submodules/solarized-emacs
-	url = https://github.com/bbatsov/solarized-emacs.git

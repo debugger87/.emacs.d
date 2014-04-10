@@ -2,12 +2,12 @@
 ;;
 ;; This is where everything starts. Do you remember this place?
 ;; It remembers you...
+(require 'package)
 
 (add-to-list 'command-switch-alist
              (cons "--live-safe-mode"
                    (lambda (switch)
                      nil)))
-
 (setq live-safe-modep
       (if (member "--live-safe-mode" command-line-args)
           "debug-mode-on"
@@ -222,5 +222,12 @@
     (setq custom-file (concat live-custom-dir "custom-configuration.el")))
 (when (file-exists-p custom-file)
   (load custom-file))
+
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(package-initialize)
 
 ;;(desktop-save-mode 1)

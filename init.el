@@ -145,6 +145,7 @@
                      "org-pack"
                      "cscope-pack"
                      "csharp-pack"
+                     "cmake-pack"
                      "bindings-pack"))
        (live-dir (file-name-as-directory "live"))
        (dev-dir  (file-name-as-directory "dev")))

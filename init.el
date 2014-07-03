@@ -232,3 +232,15 @@
 (package-initialize)
 
 ;;(desktop-save-mode 1)
+
+;; set my email address
+(seq user-mail-address "cyang@avoscloud.com")
+
+;; doxymacs
+(add-to-list 'load-path "/usr/local/Cellar/doxymacs/1.8.0/share/emacs/site-lisp")
+(require 'doxymacs)
+(add-hook 'c-mode-common-hook 'doxymacs-mode)
+(defun my-doxymacs-font-lock-hook ()
+  (if (or (eq major-mode 'c-mode) (eq major-mode 'c++-mode))
+      (doxymacs-font-lock)))
+(add-hook 'font-lock-mode-hook 'my-doxymacs-font-lock-hook)

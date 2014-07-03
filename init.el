@@ -234,7 +234,7 @@
 ;;(desktop-save-mode 1)
 
 ;; set my email address
-(seq user-mail-address "cyang@avoscloud.com")
+(setq user-mail-address "cyang@avoscloud.com")
 
 ;; doxymacs
 (add-to-list 'load-path "/usr/local/Cellar/doxymacs/1.8.0/share/emacs/site-lisp")

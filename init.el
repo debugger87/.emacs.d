@@ -226,9 +226,12 @@
 
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+             '("elpa" . "http://elpa.gnu.org/packages/"))
+
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+  (add-to-list 'package-archives '("elpa" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 
 ;;(desktop-save-mode 1)
@@ -248,3 +251,8 @@
 ;; character font
 (set-default-font "Source Code Pro-12")
 (set-fontset-font "fontset-default" 'gb18030' ("STHeiti" . "unicode-bmp"))
+
+;; google c/c++ style
+(require 'google-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)

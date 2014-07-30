@@ -265,6 +265,10 @@
 (add-hook 'c-mode-hook 'maybe-cmake-project-hook)
 (add-hook 'c++-mode-hook 'maybe-cmake-project-hook)
 
+;; flymake mode
+(require 'flymake)
+(add-hook 'find-file-hook 'flymake-find-file-hook)
+
 ;; ggtags mode
 (add-hook 'c-mode-common-hook
           (lambda ()

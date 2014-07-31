@@ -236,7 +236,7 @@
   (add-to-list 'package-archives '("elpa" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 
-;;(desktop-save-mode 1)
+(desktop-save-mode 1)
 
 ;; set my email address
 (setq user-mail-address "cyang@avoscloud.com")

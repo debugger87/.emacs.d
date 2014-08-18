@@ -265,12 +265,17 @@
 (add-hook 'c-mode-hook 'maybe-cmake-project-hook)
 (add-hook 'c++-mode-hook 'maybe-cmake-project-hook)
 
-;; flymake mode
-(require 'flymake)
-(add-hook 'find-file-hook 'flymake-find-file-hook)
+;; ;; flymake mode
+;; (require 'flymake)
+;; (add-hook 'find-file-hook 'flymake-find-file-hook)
 
 ;; ggtags mode
 (add-hook 'c-mode-common-hook
           (lambda ()
             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
               (ggtags-mode 1))))
+
+
+(add-hook 'find-file-hook
+          (lambda () (linum-mode 1)))
+(global-linum-mode 1)

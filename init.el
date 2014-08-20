@@ -275,7 +275,12 @@
             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
               (ggtags-mode 1))))
 
-
+;; linum-mode
 (add-hook 'find-file-hook
           (lambda () (linum-mode 1)))
 (global-linum-mode 1)
+
+;; color-theme-solarized
+ (require 'color-theme)
+ (setq color-theme-is-global t)
+ (color-theme-solarized-dark)

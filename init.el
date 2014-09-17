@@ -251,8 +251,8 @@
 (add-hook 'font-lock-mode-hook 'my-doxymacs-font-lock-hook)
 
 ;; character font
-(set-default-font "Source Code Pro-12")
-(set-fontset-font "fontset-default" 'gb18030' ("STHeiti" . "unicode-bmp"))
+;;(set-default-font "Source Code Pro-12")
+;;(set-fontset-font "fontset-default" 'gb18030' ("STHeiti" . "unicode-bmp"))
 
 ;; google c/c++ style
 (require 'google-c-style)

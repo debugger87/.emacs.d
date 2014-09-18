@@ -283,4 +283,4 @@
 ;; color-theme-solarized
  (require 'color-theme)
  (setq color-theme-is-global t)
- (color-theme-solarized-dark)
+ (color-theme-cyberpunk)

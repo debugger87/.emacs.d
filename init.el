@@ -283,4 +283,11 @@
 ;; color-theme-solarized
  (require 'color-theme)
  (setq color-theme-is-global t)
- (color-theme-cyberpunk)
+(color-theme-cyberpunk)
+
+;; emacs socket server
+(set-default 'server-socket-dir "~/.emacs.d/server")
+(if (functionp 'window-system)
+    (when (and (window-system)
+           (>= emacs-major-version 24))
+      (server-start)))

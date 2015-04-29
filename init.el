@@ -289,5 +289,5 @@
 (set-default 'server-socket-dir "~/.emacs.d/server")
 (if (functionp 'window-system)
     (when (and (window-system)
-           (>= emacs-major-version 24))
+               (>= emacs-major-version 24))
       (server-start)))

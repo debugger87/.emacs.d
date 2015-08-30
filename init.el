@@ -291,3 +291,7 @@
     (when (and (window-system)
                (>= emacs-major-version 24))
       (server-start)))
+
+;; haskell-hook
+(add-hook 'haskell-mode-hook
+          'haskell-indentation-mode)

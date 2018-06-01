@@ -324,5 +324,5 @@
 (smart-split)
 
 ;; Modern C++
-(add-hook 'c++-mode-hook
-          #'modern-c++-font-lock-mode)
+(require 'modern-cpp-font-lock)
+(modern-c++-font-lock-global-mode t)
